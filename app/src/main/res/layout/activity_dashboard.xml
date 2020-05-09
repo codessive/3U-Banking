@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lightGreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/height"
+        tools:context=".DashboardActivity">
+
+        <ImageView
+            android:id="@+id/access"
+            style="@style/BankImages"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="52dp"
+            android:contentDescription="@string/accessbank"
+            android:onClick="openAccess"
+            android:src="@drawable/access"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ecobank"
+            style="@style/BankImages"
+            android:layout_marginTop="52dp"
+            android:contentDescription="@string/ecobank"
+            android:onClick="openEcobank"
+            android:src="@drawable/ecobank"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintLeft_toRightOf="@id/access"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/fcmb"
+            style="@style/BankImages"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="44dp"
+            android:contentDescription="@string/fcmb"
+            android:onClick="openFcmb"
+            android:src="@drawable/fcmb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.831"
+            app:layout_constraintLeft_toRightOf="@id/ecobank"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/firstbank"
+            style="@style/BankImages"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="44dp"
+            android:contentDescription="@string/firstbank"
+            android:onClick="openFirstbank"
+            android:src="@drawable/fb"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/access" />
+
+        <ImageView
+            android:id="@+id/fidelity"
+            style="@style/BankImages"
+            android:layout_marginTop="44dp"
+            android:contentDescription="@string/fidelity"
+            android:onClick="openFidelity"
+            android:src="@drawable/fidelity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/firstbank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ecobank" />
+
+        <ImageView
+            android:id="@+id/gtb"
+            style="@style/BankImages"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="44dp"
+            android:contentDescription="@string/gtb"
+            android:onClick="openGTB"
+            android:src="@drawable/gt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintLeft_toRightOf="@id/fidelity"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fcmb" />
+
+        <ImageView
+            android:id="@+id/polaris"
+            style="@style/BankImages"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="56dp"
+            android:contentDescription="@string/polaris"
+            android:onClick="openPolaris"
+            android:src="@drawable/polaris"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/firstbank" />
+
+        <ImageView
+            android:id="@+id/stanbic"
+            style="@style/BankImages"
+            android:layout_marginTop="56dp"
+            android:contentDescription="@string/stanbic"
+            android:onClick="openStanbic"
+            android:src="@drawable/stanbic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintLeft_toRightOf="@id/polaris"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fidelity" />
+
+        <ImageView
+            android:id="@+id/sterling"
+            style="@style/BankImages"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="44dp"
+            android:contentDescription="@string/sterling"
+            android:onClick="openSterling"
+            android:src="@drawable/sterling"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintLeft_toRightOf="@id/stanbic"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gtb" />
+
+        <ImageView
+            android:id="@+id/uba"
+            style="@style/BankImages"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="68dp"
+            android:contentDescription="@string/uba"
+            android:onClick="openUBA"
+            android:src="@drawable/uba"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/polaris" />
+
+        <ImageView
+            android:id="@+id/union"
+            style="@style/BankImages"
+            android:layout_marginTop="72dp"
+            android:contentDescription="@string/union_bank"
+            android:onClick="openUnion"
+            android:src="@drawable/union"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toRightOf="@id/uba"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stanbic" />
+
+        <ImageView
+            android:id="@+id/zenith"
+            style="@style/BankImages"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="48dp"
+            android:contentDescription="@string/zenith_bank"
+            android:onClick="openZenith"
+            android:src="@drawable/zen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.813"
+            app:layout_constraintLeft_toRightOf="@id/union"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sterling" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

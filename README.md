@@ -24,3 +24,4 @@ In AndroidManifest.xml, replace `"YOUR_API_KEY"` with the token you just created
 
 ### 4) Build and run
 Build and run the app. Tap the "REQUEST PERMISSIONS" button first and follow the prompts. Finally, tap the "RUN ACTION" button to run the test action.
+# 3U-Banking

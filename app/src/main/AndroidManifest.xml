@@ -1,28 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.usehover.hoverstarter">
+    package="io.github.codessive.ubank"
+    tools:ignore="GoogleAppIndexingWarning">
+
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/coin"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/coin"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ZenithBank" />
+        <activity android:name=".UnionBank" />
+        <activity android:name=".UBA" />
+        <activity android:name=".Sterling" />
+        <activity android:name=".Stanbic" />
+        <activity android:name=".PolarisBank" />
+        <activity android:name=".GTB" />
+        <activity android:name=".FidelityBank" />
+        <activity android:name=".FirstBank" />
+        <activity android:name=".FCMB" />
+        <activity android:name=".EcoBank" />
+        <activity android:name=".AccessBank" />
+        <activity android:name=".DashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.codessive.ubank.DashboardActivity" />
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <intent-filter>
-                <action android:name="com.hover.sdk.RETURN_FROM_SETTINGS" />
-            </intent-filter>
         </activity>
+
         <meta-data
             android:name="com.hover.ApiKey"
-            android:value="YOUR_API_KEY"/>
+            android:value="bded0ef77a49643c15d3ee7bd31b7b86" />
     </application>
 
 </manifest>

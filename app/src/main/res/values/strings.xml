@@ -1,5 +1,21 @@
 <resources>
-    <string name="app_name">HoverStarter</string>
-    <string name="permissions_button_label">request permissions</string>
+    <string name="app_name">uBank</string>
+    <string name="permissions_button_label">Grant permissions</string>
     <string name="action_button_label">run action</string>
+    <string name="choose_your_bank">Choose your bank</string>
+    <string name="accessbank">AccessBank</string>
+    <string name="firstbank">firstbank</string>
+    <string name="ecobank">EcoBank</string>
+    <string name="fidelity">fidelity</string>
+    <string name="gtb">GTB</string>
+    <string name="polaris">polaris</string>
+    <string name="sterling">sterling</string>
+    <string name="stanbic">stanbic</string>
+    <string name="uba">UBA</string>
+    <string name="union_bank">Union Bank</string>
+    <string name="zenith_bank">Zenith Bank</string>
+    <string name="fcmb">Fcmb</string>
+    <string name="start_banking">Start Banking</string>
+    <string name="bank_logo">Bank Logo</string>
+    <string name="check_balance">Check Balance</string>
 </resources>
