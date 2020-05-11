@@ -35,9 +35,11 @@ public class GTB extends AppCompatActivity implements Hover.DownloadListener, Vi
         transfer_others =(CheckedTextView) findViewById(R.id.transfer_others_gtbbank);
         buy_airtime =(CheckedTextView) findViewById(R.id.buy_airtime_gtb);
 
-        proceed_payment = (Button) findViewById(R.id.btn_proceed_gtb);
-
-        proceed_payment.setOnClickListener(this);
+        buy_airtime.setOnClickListener(this);
+        transfer_others.setOnClickListener(this);
+        bill_payment.setOnClickListener(this);
+        transfer_gtb.setOnClickListener(this);
+        gtb_balance.setOnClickListener(this);
 
     }
 
@@ -55,11 +57,14 @@ public class GTB extends AppCompatActivity implements Hover.DownloadListener, Vi
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.balance_gtb){
+            gtb_balance.setChecked(true);
             Intent i=new HoverParameters.Builder(GTB.this)
                     .request("58d4977a") // Add your action ID here
 //                    .extra("YOUR_VARIABLE_NAME", "TEST_VALUE") // Uncomment and add your variables if any
                     .buildIntent();
             startActivityForResult(i,0);
+        }else{
+            gtb_balance.setChecked(false);
         }
-        }
+    }
 }
