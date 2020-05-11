@@ -18,4 +18,7 @@
     <string name="start_banking">Start Banking</string>
     <string name="bank_logo">Bank Logo</string>
     <string name="check_balance">Check Balance</string>
+    <string name="dashboard">dashboard</string>
+    <string name="mini_statement">Mini Statement</string>
+    <string name="airtime_self">Airtime Self</string>
 </resources>

@@ -5,19 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/lightPink"
+    android:background="@drawable/gradient"
     tools:context=".MainActivity">
-
-
-    <Button
-        android:id="@+id/permissions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/permissions_button_label" />
 
 
     <TextView
@@ -26,7 +15,7 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:layout_marginStart="24dp"
-        android:text="dashboard" />
+        android:text="@string/dashboard" />
 
 
 </LinearLayout>
