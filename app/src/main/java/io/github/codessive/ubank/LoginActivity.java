@@ -26,11 +26,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        inputEmail = (EditText) findViewById(R.id.login_email);
-        inputPassword = (EditText) findViewById(R.id.login_password);
-        loginButton = (Button) findViewById(R.id.btn_login);
+        inputEmail = findViewById(R.id.login_email);
+        inputPassword = findViewById(R.id.login_password);
+        loginButton = findViewById(R.id.btn_login);
 
-        dontHaveANAccount = (TextView) findViewById(R.id.signUpHere);
+        dontHaveANAccount = findViewById(R.id.signUpHere);
         dontHaveANAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
