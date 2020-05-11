@@ -4,6 +4,8 @@
     package="io.github.codessive.ubank"
     tools:ignore="GoogleAppIndexingWarning">
 
+    <uses-sdk tools:overrideLibrary="com.hover.sdk"/>
+
 
     <application
         android:allowBackup="true"

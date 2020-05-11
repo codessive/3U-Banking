@@ -2,13 +2,11 @@ package io.github.codessive.ubank;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.hover.sdk.api.Hover;
 import com.hover.sdk.actions.HoverAction;
@@ -25,7 +23,7 @@ public class FirstBank extends AppCompatActivity implements Hover.DownloadListen
         setContentView(R.layout.first_bank);
 
 
-        Hover.initialize(getApplicationContext(), this);
+        Hover.initialize( FirstBank.this);
 
 
         TextView checkBalance = findViewById(R.id.fbn_balance);
@@ -35,6 +33,30 @@ public class FirstBank extends AppCompatActivity implements Hover.DownloadListen
                 Intent i = new HoverParameters.Builder(FirstBank.this)
                         .request("1d9ae9ca") // Add your action ID here
 //                    .extra("YOUR_VARIABLE_NAME", "TEST_VALUE") // Uncomment and add your variables if any
+                        .buildIntent();
+                startActivityForResult(i, 0);
+            }
+        });
+
+        TextView getStatement = findViewById(R.id.fbn_statement);
+        getStatement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new HoverParameters.Builder(FirstBank.this)
+                        .request("1a4f87bd") // Add your action ID here
+//                    .extra("YOUR_VARIABLE_NAME", "TEST_VALUE") // Uncomment and add your variables if any
+                        .buildIntent();
+                startActivityForResult(i, 0);
+            }
+        });
+
+        TextView buyAirtimeSelf = findViewById(R.id.fbn_airtime_self);
+        buyAirtimeSelf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new HoverParameters.Builder(FirstBank.this)
+                        .request("37e501de") // Add your action ID here
+//                   .extra("YOUR_VARIABLE_NAME ", "TEST_VALUE") // Uncomment and add your variables if any
                         .buildIntent();
                 startActivityForResult(i, 0);
             }

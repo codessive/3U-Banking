@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/lightGreen"
+    android:background="@drawable/gradient"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -20,10 +20,21 @@
             android:src="@drawable/fb" />
 
         <TextView
+            style="@style/TransactionsTextView"
             android:id="@+id/fbn_balance"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/check_balance"/>
+
+        <TextView
+            style="@style/TransactionsTextView"
+            android:id="@+id/fbn_statement"
+            android:text="@string/mini_statement"/>
+
+        <TextView
+            style="@style/TransactionsTextView"
+            android:id="@+id/fbn_airtime_self"
+            android:text="@string/airtime_self"/>
+
+
 
     </LinearLayout>
 

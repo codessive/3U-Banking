@@ -22,7 +22,7 @@ public class GTB extends AppCompatActivity implements Hover.DownloadListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.g_t_b);
 
-        Hover.initialize(getApplicationContext(), this);
+        Hover.initialize( GTB.this);
 
 
         TextView checkBalance = findViewById(R.id.gtb_balance);
