@@ -27,7 +27,7 @@ public class GTB extends AppCompatActivity implements Hover.DownloadListener, Vi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.g_t_b);
 
-        Hover.initialize(getApplicationContext(), this);
+        Hover.initialize( GTB.this);
 
         gtb_balance =(CheckedTextView) findViewById(R.id.balance_gtb);
         transfer_gtb =(CheckedTextView) findViewById(R.id.transfer_gtb);

@@ -18,7 +18,6 @@ import java.util.ArrayList;
 
 public class FirstBank extends AppCompatActivity implements Hover.DownloadListener {
     private final String TAG = "FirstBank";
-    private TextView checkBalance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +28,17 @@ public class FirstBank extends AppCompatActivity implements Hover.DownloadListen
         Hover.initialize(getApplicationContext(), this);
 
 
+        TextView checkBalance = findViewById(R.id.fbn_balance);
+        checkBalance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new HoverParameters.Builder(FirstBank.this)
+                        .request("1d9ae9ca") // Add your action ID here
+//                    .extra("YOUR_VARIABLE_NAME", "TEST_VALUE") // Uncomment and add your variables if any
+                        .buildIntent();
+                startActivityForResult(i, 0);
+            }
+        });
     }
     @Override public void onError(String message) {
 //		Toast.makeText(this, "Error while attempting to download actions, see logcat for error", Toast.LENGTH_LONG).show();
