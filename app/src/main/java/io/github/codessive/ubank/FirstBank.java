@@ -39,6 +39,43 @@ public class FirstBank extends AppCompatActivity implements Hover.DownloadListen
                 startActivityForResult(i, 0);
             }
         });
+
+        TextView getStatement = findViewById(R.id.fbn_statement);
+        getStatement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new HoverParameters.Builder(FirstBank.this)
+                        .request("1a4f87bd") // Add your action ID here
+//                    .extra("YOUR_VARIABLE_NAME", "TEST_VALUE") // Uncomment and add your variables if any
+                        .buildIntent();
+                startActivityForResult(i, 0);
+            }
+        });
+
+        /**    TextView loadAirtime = findViewById(R.id.fbn_airtime_self);
+        loadAirtime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new HoverParameters.Builder(FirstBank.this)
+                        .request("37e501de") // Add your action ID here
+ //                  .extra("YOUR_VARIABLE_NAME", "TEST_VALUE") // Uncomment and add your variables if any
+                        .buildIntent();
+                startActivityForResult(i, 0);
+            }
+       });
+
+        TextView sendMoney = findViewById(R.id.fbn_send_money);
+        sendMoney.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new HoverParameters.Builder(FirstBank.this)
+                        .request("1d9ae9ca") // Add your action ID here
+                   .extra("YOUR_VARIABLE_NAME", "TEST_VALUE") // Uncomment and add your variables if any
+                        .buildIntent();
+*                startActivityForResult(i, 0);
+*            }
+*        });
+*/
     }
     @Override public void onError(String message) {
 //		Toast.makeText(this, "Error while attempting to download actions, see logcat for error", Toast.LENGTH_LONG).show();

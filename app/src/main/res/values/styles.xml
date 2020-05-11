@@ -15,9 +15,10 @@
         <item name="android:clickable">true</item>
     </style>
     <style name="BankPages">
+        <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:layout_height">@dimen/main</item>
         <item name="android:layout_width">@dimen/main</item>
-        <item name="android:layout_marginStart">@dimen/margin</item>
+        <item name="android:layout_marginTop">@dimen/height</item>
     </style>
 
     <style name="TransactionsTextView">
@@ -25,5 +26,7 @@
         <item name="android:layout_margin">@dimen/margin</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
     </style>
+
 </resources>

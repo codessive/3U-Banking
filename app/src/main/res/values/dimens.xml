@@ -2,7 +2,8 @@
 <resources>
     <dimen name="height">64dp</dimen>
     <dimen name="width">64dp</dimen>
-    <dimen name="main">80dp</dimen>
+    <dimen name="main">120dp</dimen>
     <dimen name="margin">24dp</dimen>
     <dimen name="text_size">22sp</dimen>
+    <dimen name="padding">16dp</dimen>
 </resources>

@@ -4,7 +4,6 @@
     package="io.github.codessive.ubank"
     tools:ignore="GoogleAppIndexingWarning">
 
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/coin"
@@ -12,6 +11,13 @@
         android:roundIcon="@drawable/coin"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".LandingPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ZenithBank" />
         <activity android:name=".UnionBank" />
         <activity android:name=".UBA" />
@@ -28,13 +34,7 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="io.github.codessive.ubank.DashboardActivity" />
-        </activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data

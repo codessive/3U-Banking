@@ -2,9 +2,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorPrimaryDark"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <LinearLayout
@@ -12,120 +12,40 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/gtb_main"
-            android:layout_marginTop="50dp"
-            style="@style/BankPages"
-            android:contentDescription="@string/bank_logo"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/gt" />
+    <ImageView
+        android:id="@+id/gtb_main"
+        style="@style/BankPages"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/bank_logo"
+        android:src="@drawable/gt" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_margin="20dp"
-            android:padding="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+    <TextView
+        android:id="@+id/gtb_balance"
+        style="@style/TransactionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_balance" />
 
-            <CheckedTextView
-                android:id="@+id/buy_airtime_gtb"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_marginTop="228dp"
-                android:text="Buy Airtime"
-                android:checkMark="@drawable/text_selection"
-                android:checked="true"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/fbn_statement"
+        style="@style/TransactionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_balance" />
 
-            <CheckedTextView
-                android:id="@+id/transfer_others_gtbbank"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_marginTop="8dp"
-                android:text="Make Transfer-Others"
-                android:checkMark="@drawable/text_selection"
-                android:textSize="18sp"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    <TextView
+        android:id="@+id/fbn_airtime_self"
+        style="@style/TransactionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_balance" />
 
-            <CheckedTextView
-                android:id="@+id/bill_payment"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_marginTop="8dp"
-                android:text="Bill Payment"
-                android:checkMark="@drawable/text_selection"
-                android:textSize="18sp"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-            <CheckedTextView
-                android:id="@+id/transfer_gtb"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_marginTop="8dp"
-                android:text="Transfer -GTB"
-                android:checkMark="@drawable/text_selection"
-                android:textSize="18sp"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-            <CheckedTextView
-                android:id="@+id/balance_gtb"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_marginTop="8dp"
-                android:text="Check your Balance"
-                android:checkMark="@drawable/text_selection"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#000000"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-            <Button
-                android:id="@+id/btn_proceed_gtb"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:ems="10"
-                android:padding="16dp"
-                android:text="Proceed"
-                android:textSize="20sp"
-                android:textColor="@color/hsdk_white"
-                android:textStyle="bold"
-                android:textAllCaps="false"
-                android:background="@drawable/input_designs"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView5" />
-
-
-        </LinearLayout>
-
+    <TextView
+        android:id="@+id/fbn_send_money"
+        style="@style/TransactionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_balance" />
     </LinearLayout>
-
 </ScrollView>

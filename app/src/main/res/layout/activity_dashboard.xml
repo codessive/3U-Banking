@@ -3,21 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    >
+    android:layout_height="match_parent">
 
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Select Your Bank"
+        android:text="@string/select_your_bank"
         android:textStyle="bold"
-        android:textColor="@color/hsdk_white"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         android:gravity="center"
         android:layout_marginTop="16dp"
+        android:paddingBottom="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,8 +47,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="10dp"
-                    >
+                    android:padding="10dp">
 
                     <ImageView
                         android:id="@+id/access"

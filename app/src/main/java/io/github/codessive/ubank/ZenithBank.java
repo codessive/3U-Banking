@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class ZenithBank extends AppCompatActivity {
+    private final String TAG = "ZenithBank";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -21,4 +21,10 @@
     <string name="dashboard">dashboard</string>
     <string name="mini_statement">Mini Statement</string>
     <string name="airtime_self">Airtime Self</string>
+    <string name="airtime_for_self">Airtime (Self)</string>
+    <string name="send_money">Send Money</string>
+    <string name="app_logo">App Logo</string>
+    <string name="ussd_banking">USSD Banking</string>
+    <string name="home_page">Welcome to a new world of USSD banking. \nHere, you can carry out all your USSD transactions \nwith any bank that you have an account with. \nClick on \'Start Banking\' to locate your bank.</string>
+    <string name="select_your_bank">Select Your Bank</string>
 </resources>
