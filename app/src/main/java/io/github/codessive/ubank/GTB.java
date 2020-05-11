@@ -33,7 +33,7 @@ public class GTB extends AppCompatActivity implements Hover.DownloadListener, Vi
         transfer_gtb =(CheckedTextView) findViewById(R.id.transfer_gtb);
         bill_payment =(CheckedTextView) findViewById(R.id.bill_payment);
         transfer_others =(CheckedTextView) findViewById(R.id.transfer_others_gtbbank);
-        buy_airtime =(CheckedTextView) findViewById(R.id.buy_airtime);
+        buy_airtime =(CheckedTextView) findViewById(R.id.buy_airtime_gtb);
 
         proceed_payment = (Button) findViewById(R.id.btn_proceed_gtb);
 
